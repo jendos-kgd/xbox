@@ -90,6 +90,25 @@ header img {
 }
 .dropdown_menu {
   display: none;
+  position: absolute;
+  background-color: #373A3C;
+  opacity: 0.9;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.dropdown_menu li {
+  border-top: 1px solid #ffffff;
+  padding: 10px 5px;
+  margin-right: 0;
+}
+.dropdown_menu li:first-child {
+  border-top: none;
+}
+.dropdown_menu li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.dropdown_menu li a:hover {
+  color: #ffffff;
 }
 .dropdown_title::after {
   content: url('img/logo and icons/down_arrow.png');
