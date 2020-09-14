@@ -57,9 +57,22 @@ a {
 }
 body {
   font-family: 'HelveticaNeue', sans-serif;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 1400px;
 }
-
+button {
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+}
+.grey_btn {
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+}
+.green_btn {
+  background-color: #8DD83D;
+}
 /*====================Header================================*/
 header {
   width: 100%;
@@ -92,7 +105,7 @@ header img {
   display: none;
   position: absolute;
   background-color: #373A3C;
-  opacity: 0.9;
+  opacity: 0.8;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -128,4 +141,83 @@ header img {
 #profile::before {
   content: url('img/logo and icons/user_logo.png');
   padding-right: 5px;
+}
+
+
+/*=======================Main game block==================*/
+.main_game_block {
+  height: 644px;
+  position: relative;
+  overflow: hidden;
+}
+.main_game_item {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  transition: 1s ease-in;
+  display: inline;
+}
+#first_slide {
+  left: 0%;
+}
+#second_slide {
+  left: 100%;
+}
+#third_slide {
+  left: 200%;
+}
+.main_game_item img {
+  width: 100%;
+}
+.main_game_item p {
+  color: #ffffff;
+}
+.main_game_title_h {
+  font-size: 36px;
+  line-height: 42px;
+  position: absolute;
+  top: 220px;
+  left: 830px;
+}
+.main_game_title {
+  font-size: 24px;
+  line-height: 28px;
+  position: absolute;
+  top: 260px;
+  left: 830px;
+}
+.main_game_item button {
+  height: 38px;
+  position: absolute;
+  top: 410px;
+}
+.watch_trailer {
+  width: 136px;
+  left: 830px;
+}
+.explore_games {
+  width: 148px;
+  left: 980px;
+}
+.black_side {
+  width: 10%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.black_side img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#left_side {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 5e-05) 0%, rgba(0, 0, 0, 0.3) 100%);
+  left: 0;
+}
+#right_side {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 5e-05) 100%);
+  right: 0;
 }
