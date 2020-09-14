@@ -154,7 +154,7 @@ header img {
   width: 100%;
   position: absolute;
   top: 0;
-  transition: 1s ease-in;
+  transition: 0.5s ease-in;
   display: inline;
 }
 #first_slide {
@@ -186,7 +186,7 @@ header img {
   top: 260px;
   left: 830px;
 }
-.main_game_item button {
+.main_game_block button {
   height: 38px;
   position: absolute;
   top: 410px;
@@ -199,6 +199,17 @@ header img {
   width: 148px;
   left: 980px;
 }
+.img_logistic {
+  position: absolute;
+  bottom: 7%;
+  left: 47%;
+}
+.img_logistic img {
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+}
+
 .black_side {
   width: 10%;
   height: 100%;

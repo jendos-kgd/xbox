@@ -4,7 +4,7 @@ $(document).ready(function () {
   dropdownMenu();
   closeDropdown();
   changeSLides();
-  console.log($('.main_game_item').css('width'));
+  // console.log($('.main_game_item').css('width'));
 })
 
 function closeDropdown() {
@@ -51,16 +51,34 @@ function changeSLides() {
   let slideLeft = '-' + slideRight;
   let slideOverLeft = +parseInt(slideLeft) * 2 + 'px';
   let show = '0px';
+  let strokeCircle = 'img/logo and icons/stroke_circle.png';
+  let fillCircle = 'img/logo and icons/fill_circle.png';
+  let game1link = 'https://www.youtube.com/embed/_q51LZ2HpbE';
+  let game2link = 'https://www.youtube.com/embed/l5eGNqppGUs';
+  let game3link = 'https://www.youtube.com/embed/iZzZKdIoOEI';
+
 
   $('#next_slide').click(function () {
     if ($('#first_slide').css('left') == show) {
       $('#first_slide').css('left', slideLeft);
       $('#second_slide').css('left', show);
       $('#third_slide').css('left', slideRight);
+
+      $('#trailer').attr('action', game2link);
+
+      $('#first_dote').attr('src', strokeCircle);
+      $('#second_dote').attr('src', fillCircle);
+      $('#third_dote').attr('src',strokeCircle);
     } else if ($('#second_slide').css('left') == show) {
       $('#first_slide').css('left', slideOverLeft);
       $('#second_slide').css('left', slideLeft);
       $('#third_slide').css('left', show);
+
+      $('#trailer').attr('action', game3link);
+
+      $('#first_dote').attr('src', strokeCircle);
+      $('#second_dote').attr('src', strokeCircle);
+      $('#third_dote').attr('src', fillCircle);
     }
   })
 
@@ -69,10 +87,22 @@ function changeSLides() {
       $('#first_slide').css('left', show);
       $('#second_slide').css('left', slideRight);
       $('#third_slide').css('left', slideOverRight);
+
+      $('#trailer').attr('action', game1link);
+
+      $('#first_dote').attr('src', fillCircle);
+      $('#second_dote').attr('src', strokeCircle);
+      $('#third_dote').attr('src',strokeCircle);
     } else if ($('#third_slide').css('left') == show) {
       $('#first_slide').css('left', slideLeft);
       $('#second_slide').css('left', show);
       $('#third_slide').css('left', slideRight);
+
+      $('#trailer').attr('action', game2link);
+
+      $('#first_dote').attr('src', strokeCircle);
+      $('#second_dote').attr('src', fillCircle);
+      $('#third_dote').attr('src',strokeCircle);
     }
   })
 }
