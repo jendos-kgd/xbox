@@ -60,6 +60,16 @@ body {
   width: 100%;
   max-width: 1400px;
 }
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+}
 button {
   color: #ffffff;
   font-size: 16px;
@@ -153,7 +163,6 @@ header img {
 .main_game_item {
   width: 100%;
   position: absolute;
-  top: 0;
   transition: 0.5s ease-in;
   display: inline;
 }
@@ -176,28 +185,28 @@ header img {
   font-size: 36px;
   line-height: 42px;
   position: absolute;
-  top: 220px;
-  left: 830px;
+  top: 35%;
+  left: 55%;
 }
 .main_game_title {
   font-size: 24px;
   line-height: 28px;
   position: absolute;
-  top: 260px;
-  left: 830px;
+  top: 40%;
+  left: 55%;
 }
 .main_game_block button {
   height: 38px;
   position: absolute;
-  top: 410px;
+  top: 63%;
 }
 .watch_trailer {
   width: 136px;
-  left: 830px;
+  left: 55%;
 }
 .explore_games {
   width: 148px;
-  left: 980px;
+  left: 68%;
 }
 .img_logistic {
   position: absolute;
@@ -231,4 +240,59 @@ header img {
 #right_side {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 5e-05) 100%);
   right: 0;
+}
+
+/*==================Advantages Block====================*/
+.advantages_block {
+  width: 100%;
+  min-height: 865px;
+  background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
+  padding-top: 65px;
+}
+.advantages_block>img {
+  width: 63px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.advantages_block h1 {
+  text-align: center;
+  margin-top: 15px;
+}
+.advantages_block h2 {
+  text-align: center;
+}
+.advantages_cards_container {
+  display: flex;
+  justify-content: center;
+  padding-top: 45px;
+}
+.advantages_card {
+  width: 320px;
+  height: 420px;
+  background-color: #ffffff;
+  border: 1px solid #8DD83D;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 65px;
+}
+
+.picture_sign {
+  font-size: 18px;
+  line-height: 21px;
+  color: #435766;
+  margin-top: 16px;
+  margin-left: 22px;
+}
+.advantages_text {
+  font-size: 24px;
+  line-height: 28px;
+  color: #435766;
+  margin-top: 13px;
+  margin-left: 22px;
+}
+.advantages_btn {
+  width: 278px;
+  height: 60px;
+  margin-top: 35px;
+  margin-left: 22px;
 }
