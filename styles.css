@@ -315,9 +315,6 @@ header img {
   margin-top: 100px;
   margin-bottom: 55px;
 }
-.games_cards_window {
-
-}
 .games_cards_container {
   display: flex;
   justify-content: flex-start;
@@ -346,4 +343,12 @@ header img {
   position: absolute;
   top: 100px;
   right: 55px;
+}
+.store_btn {
+  width: 207px;
+  height: 53px;
+}
+.store_btn_form {
+  width: 207px;
+  margin: 85px auto;
 }
