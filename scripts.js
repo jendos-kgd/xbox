@@ -4,6 +4,7 @@ $(document).ready(function () {
   dropdownMenu();
   closeDropdown();
   changeSLides();
+  gamesSlides();
   // console.log($('.main_game_item').css('width'));
 })
 
@@ -104,5 +105,30 @@ function changeSLides() {
       $('#second_dote').attr('src', fillCircle);
       $('#third_dote').attr('src',strokeCircle);
     }
+  })
+}
+
+function gamesSlides() {
+  let leftPosition = 0;
+  let gamesCounter = $('.games_card').length;
+  let gamesField = parseInt($('.games_cards_container').css('width'), 10);
+  let maxRightPosition = gamesCounter * 350;
+  let maxLeftPosition = gamesField - maxRightPosition -65;
+
+
+  console.log('gamesCounter:' + gamesCounter);
+  console.log('gamesField:' + gamesField);
+  console.log('maxRightPosition:' + maxRightPosition);
+  console.log('maxLeftPosition:' + maxLeftPosition);
+
+
+  $('#games_forward').click(function () {
+    if ((leftPosition - 640) < maxLeftPosition) {
+      leftPosition = maxLeftPosition;
+    } else {
+      leftPosition -= 640;
+    }
+    console.log(leftPosition);
+    $('.games_cards_container').css('left', leftPosition + 'px')
   })
 }
