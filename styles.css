@@ -70,6 +70,11 @@ h2 {
   line-height: 42px;
   color: #ffffff;
 }
+h3 {
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
 button {
   color: #ffffff;
   font-size: 16px;
@@ -351,4 +356,32 @@ header img {
 .store_btn_form {
   width: 207px;
   margin: 85px auto;
+}
+
+/*==================Design Block=============*/
+.design_block {
+  width: 100%;
+  height: 480px;
+  background: url('img/backgrounds/white-opacity.png'),
+              url('img/backgrounds/design-background.png');
+  padding-top: 115px;
+  padding-left: 165px;
+}
+.design_block h3 {
+  margin-top: 10px;
+  max-width: 450px;
+}
+.design_block form {
+  display: inline-block;
+  width: auto;
+}
+.design_block .grey_btn {
+  width: 207px;
+  height: 60px;
+  margin-top: 40px;
+}
+.design_block .green_btn {
+  width: 278px;
+  height: 60px;
+  margin-left: 15px;
 }
