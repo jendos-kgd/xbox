@@ -115,20 +115,27 @@ function gamesSlides() {
   let maxRightPosition = gamesCounter * 350;
   let maxLeftPosition = gamesField - maxRightPosition -65;
 
-
-  console.log('gamesCounter:' + gamesCounter);
-  console.log('gamesField:' + gamesField);
-  console.log('maxRightPosition:' + maxRightPosition);
-  console.log('maxLeftPosition:' + maxLeftPosition);
-
-
   $('#games_forward').click(function () {
     if ((leftPosition - 640) < maxLeftPosition) {
       leftPosition = maxLeftPosition;
+      $('#games_forward').css('display', 'none');
     } else {
       leftPosition -= 640;
     }
     console.log(leftPosition);
-    $('.games_cards_container').css('left', leftPosition + 'px')
+    $('.games_cards_container').css('left', leftPosition + 'px');
+    $('#games_back').css('display', 'block');
+  })
+
+  $('#games_back').click(function () {
+    if ((leftPosition + 640) >= 0) {
+      leftPosition = 0;
+      $('#games_back').css('display', 'none');
+    } else {
+      leftPosition += 640;
+    }
+    $('.games_cards_container').css('left', leftPosition + 'px');
+    $('#games_forward').css('display', 'block');
+    console.log(leftPosition);
   })
 }
