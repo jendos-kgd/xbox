@@ -327,6 +327,13 @@ header img {
   left: 0;
   transition-duration: 0.3s;
 }
+.card_aditional_text {
+  font-size: 21px;
+  line-height: 25px;
+  color: #435766;
+  margin-top: 15px;
+  margin-left: 20px;
+}
 .games_card {
   display: inline-block;
   margin-right: 30px;
